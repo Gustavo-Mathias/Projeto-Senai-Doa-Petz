@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Zerar as contagens do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+}
+
+/* Criar uma variavel do css */
+:root {
+  --background-color: #FBFBFB;
+
+  --color-primary-text: #33303E;
+  --color-secondary-text: #4e4b59;
+  --color-tertiary-text: #f5f5f5;
+  --color-quaternary-text: #7a7786;
+
+  --primary-color: #ff8800;
+  --primary-color-variant-one: #FF6E22;
+  --primary-color-variant-two: #FF950D;
+
+  --secondary-color: #0088ae;
+
+  --additional-color-blue: #66acff;
+  --additional-color-yellow: #FFe74c;
+  --additional-color-purple: #a944ff;
+
+  --primary-font: "Mochiy Pop One", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+img.logomarca {
+  width: 14vw;
+}
+
+.container-pz {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h2.titulo {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 3rem;
+  color: var(--color-primary-text);
+}
+
+p.descricao {
+  font-weight: 500;
+  font-size: 1.45rem;
+  line-height: 2.2rem;
+  color: var(--color-secondary-text);
+}
+
+/* Estilizando o nosso cabecalho */
+.cabecalho {
+  padding: 2rem 0px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.102);
+}
+
+nav.menu {
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.links-navegacao li a {
+  padding: 1rem;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--color-secondary-text);
+}
+
+ul.links-navegacao li.registrar a {
+  color: var(--primary-color-variant-one);
+}
+
+/* FOOTER */
+
+footer.rodape
+{
+  background-color: var(--secondary-color);
+}
+
+.conteudo-rodape
+{
+  display: flex;
+  /* flex-direction: column; */
+
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redes-sociais
+{
+  display: flex;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--background-color);
+}
+
+.redes-sociais i
+{
+  margin: 0px 5px;
+}
+
+.copyright
+{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: var(--background-color);
+}
+/********************/
+
+/* APLICANDO AS MEDIDAS RESPONSIVAS ATÉ 1200PX */
+
+@media screen and (max-width: 1200PX) {
+  h2.titulo {
+    font-size: 2rem;
+    line-height: 3.4rem;
+  }
+
+  p.descricao {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024PX) {
+  h2.titulo {
+    line-height: 3rem;
+  }
+
+  p.descricao {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  img.logomarca {
+    width: 20vw;
+  }
+
+  h2.titulo {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  h2.titulo {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .conteudo-rodape {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .copyright {
+    font-size: 1em;
+  }
+
+  img.logomarca {
+    width: 25vw;
+  }
+}
