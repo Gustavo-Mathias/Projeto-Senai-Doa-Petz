@@ -13,6 +13,7 @@
 /* Criar uma variavel do css */
 :root {
   --background-color: #FBFBFB;
+  --background-secondary-color: #00A3B4;
 
   --color-primary-text: #33303E;
   --color-secondary-text: #4e4b59;
@@ -23,7 +24,7 @@
   --primary-color-variant-one: #FF6E22;
   --primary-color-variant-two: #FF950D;
 
-  --secondary-color: #0088ae;
+  --secondary-color: #00A3B4;
 
   --additional-color-blue: #66acff;
   --additional-color-yellow: #FFe74c;
@@ -73,7 +74,7 @@ p.descricao {
 /* Estilizando o nosso cabecalho */
 .cabecalho {
   padding: 2rem 0px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.102);
+  background-color: var(--background-secondary-color);
 }
 
 nav.menu {
@@ -88,15 +89,19 @@ ul.links-navegacao li a {
   color: var(--color-secondary-text);
 }
 
+ul.links-navegacao li.entrar a{
+  color: var(--color-tertiary-text);
+}
+
 ul.links-navegacao li.registrar a {
-  color: var(--primary-color-variant-one);
+  color: var(--primary-color-variant-two);
 }
 
 /* FOOTER */
 
 footer.rodape
 {
-  background-color: var(--secondary-color);
+  background-color: var(--background-secondary-color);
 }
 
 .conteudo-rodape
