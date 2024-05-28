@@ -290,20 +290,3 @@ div.valores-topicos div.linhas-valores {
     flex-direction: column !important;
   }
 }
-
-
-
-/*********LOGIN***************/
-
-.preencher {
-  width: 604px;
-  height: 480px;
-  margin-top: 62px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  background: red;
-}
-
-.input {
-  
-}
